@@ -1,7 +1,7 @@
 int countingValleys(int n, char* s)
  {  
     
-    int k=0,c=0,i;
+    int k=0,count=0,i;
     for(i=0;i<n;i++)
     {
         if(s[i] == 'D')
@@ -10,9 +10,9 @@ int countingValleys(int n, char* s)
         {
             k++;
             if(k == 0 && s[i] == 'U')
-                c++;
+                count++;
         }
            
     }
-    return c;
+    return count;
  }
